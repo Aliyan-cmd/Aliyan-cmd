@@ -5,8 +5,6 @@ It highlights my profile, skills, experience, education, and contact details wit
 
 ## Live Demo
 
-**URL:** https://portfolio-website-decoded-bulwark-494314-d5.a.run.app
-
 ## Features
 
 1. Responsive one-page portfolio layout
