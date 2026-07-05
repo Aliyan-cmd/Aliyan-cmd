@@ -3,8 +3,6 @@
 A modern, responsive personal portfolio website built with **HTML, CSS, and JavaScript**.  
 It highlights my profile, skills, experience, education, and contact details with a clean developer-focused UI and smooth interactions.
 
-![Portfolio Preview](images/screenshot-2026-04-28_21-37-12.png)
-
 ## Live Demo
 
 **URL:** https://portfolio-website-decoded-bulwark-494314-d5.a.run.app
