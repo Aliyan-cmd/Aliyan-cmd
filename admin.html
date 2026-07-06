@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Aliyan Portfolio</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <section class="login-card" id="login-view">
+      <h1>Admin Login</h1>
+      <p>Manage your portfolio content, skills, and projects.</p>
+      <form id="login-form">
+        <label>
+          Username
+          <input type="text" id="login-username" required>
+        </label>
+        <label>
+          Password
+          <input type="password" id="login-password" required>
+        </label>
+        <button type="submit">Login</button>
+      </form>
+      <small>Default credentials: <code>admin / admin123</code></small>
+      <a href="index.html" class="back-link">← Back to website</a>
+    </section>
+
+    <section class="panel" id="panel-view" hidden>
+      <header class="panel-header">
+        <h1>Portfolio Admin Panel</h1>
+        <div class="panel-actions">
+          <button type="button" id="reset-data" class="danger">Reset Data</button>
+          <button type="button" id="logout">Logout</button>
+        </div>
+      </header>
+
+      <div class="tabs">
+        <button type="button" class="tab-btn active" data-tab="general">General</button>
+        <button type="button" class="tab-btn" data-tab="skills">Skills</button>
+        <button type="button" class="tab-btn" data-tab="projects">Projects</button>
+        <button type="button" class="tab-btn" data-tab="experience">Experience</button>
+        <button type="button" class="tab-btn" data-tab="education">Education</button>
+        <button type="button" class="tab-btn" data-tab="advanced">Advanced</button>
+      </div>
+
+      <div class="tab-content active" id="tab-general">
+        <h2>General Content</h2>
+        <form id="general-form" class="grid-form">
+          <label>Availability Badge Text<input id="g-availability" type="text"></label>
+          <label>Hero Highlight Name<input id="g-name-highlight" type="text"></label>
+          <label>Hero Name Line 2<input id="g-name-line2" type="text"></label>
+          <label class="full">Hero Description<textarea id="g-hero-desc" rows="3"></textarea></label>
+          <label>Primary Button Text<input id="g-primary-text" type="text"></label>
+          <label>Primary Button Link<input id="g-primary-link" type="text"></label>
+          <label>Secondary Button Text<input id="g-secondary-text" type="text"></label>
+          <label>Secondary Button Link<input id="g-secondary-link" type="text"></label>
+          <label class="full">About Heading (supports &lt;br&gt;)<input id="g-about-heading" type="text"></label>
+          <label class="full">About Paragraphs (separated by double newlines)<textarea id="g-about-paragraphs" rows="5"></textarea></label>
+          <label class="full">About Tags (comma separated)<input id="g-about-tags" type="text"></label>
+          <label class="full">Contact Intro<textarea id="g-contact-intro" rows="3"></textarea></label>
+          <label>Email<input id="g-contact-email" type="text"></label>
+          <label>Phone<input id="g-contact-phone" type="text"></label>
+          <label>Location<input id="g-contact-location" type="text"></label>
+          <label class="full">Languages (comma separated)<input id="g-contact-langs" type="text"></label>
+          <button type="submit" class="full">Save General Changes</button>
+        </form>
+      </div>
+
+      <div class="tab-content" id="tab-skills">
+        <h2>Skills Manager</h2>
+        <form id="skill-form" class="inline-form">
+          <input id="skill-icon" type="text" placeholder="Icon (e.g. 💻)" required>
+          <input id="skill-title" type="text" placeholder="Skill title" required>
+          <input id="skill-items" type="text" placeholder="Items comma separated" required>
+          <button type="submit">Add Skill</button>
+        </form>
+        <div id="skills-list" class="list-cards"></div>
+      </div>
+
+      <div class="tab-content" id="tab-projects">
+        <h2>Projects Manager</h2>
+        <form id="project-form" class="inline-form project-form">
+          <input id="project-title" type="text" placeholder="Project title" required>
+          <input id="project-link" type="text" placeholder="Project link (# or https://...)" required>
+          <input id="project-tech" type="text" placeholder="Tech stack comma separated" required>
+          <textarea id="project-desc" rows="3" placeholder="Project description" required></textarea>
+          <input id="project-link-text" type="text" placeholder="Link text (e.g. Live Demo)" required>
+          <button type="submit">Add Project</button>
+        </form>
+        <div id="projects-list" class="list-cards"></div>
+      </div>
+
+      <div class="tab-content" id="tab-experience">
+        <h2>Experience Manager</h2>
+        <form id="experience-form" class="grid-form">
+          <label>Date / Duration<input id="exp-date" type="text" placeholder="e.g. Aug 2024 - Present" required></label>
+          <label>Job Title<input id="exp-title" type="text" placeholder="e.g. Full-Stack Developer" required></label>
+          <label class="full">Company Name<input id="exp-company" type="text" placeholder="e.g. Decoded Bulwark" required></label>
+          <label class="full">Key Achievements (one per line)<textarea id="exp-points" rows="4" placeholder="e.g. Architected scalable microservices...&#10;Improved website performance by 40%..." required></textarea></label>
+          <button type="submit" class="full">Add Experience</button>
+        </form>
+        <div id="experience-list" class="list-cards"></div>
+      </div>
+
+      <div class="tab-content" id="tab-education">
+        <h2>Education Manager</h2>
+        <form id="education-form" class="grid-form">
+          <label>Badge / Category<input id="edu-badge" type="text" placeholder="e.g. Degree or Certification" required></label>
+          <label>Degree / Field of Study<input id="edu-title" type="text" placeholder="e.g. B.E. in Computer Engineering" required></label>
+          <label class="full">School / Institution<input id="edu-school" type="text" placeholder="e.g. Example University" required></label>
+          <label class="full">Tags / Highlights (comma separated)<input id="edu-tags" type="text" placeholder="e.g. GPA: 3.8, Computer Vision" required></label>
+          <button type="submit" class="full">Add Education</button>
+        </form>
+        <div id="education-list" class="list-cards"></div>
+      </div>
+
+      <div class="tab-content" id="tab-advanced">
+        <h2>Advanced</h2>
+        <p>Edit the full data structure for complete control.</p>
+        <textarea id="raw-json" rows="18"></textarea>
+        <div class="panel-actions">
+          <button type="button" id="save-json">Save JSON</button>
+        </div>
+        <h3>Admin Credentials</h3>
+        <form id="auth-form" class="inline-form">
+          <input id="auth-username" type="text" placeholder="New username" required>
+          <input id="auth-password" type="password" placeholder="New password" required>
+          <button type="submit">Update Login</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="portfolio-data.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -6,15 +6,13 @@
   <meta name="description" content="Aliyan Abdulraheem Mulla — Full-Stack Developer, Arch Linux enthusiast, and Computer Science student. Portfolio showcasing web development projects and skills.">
   <meta name="author" content="Aliyan Abdulraheem Mulla">
   <link rel="canonical" href="https://portfolio-website-decoded-bulwark-494314-d5.a.run.app">
-  
-  <!-- Open Graph / Facebook -->
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://portfolio-website-decoded-bulwark-494314-d5.a.run.app">
   <meta property="og:title" content="Aliyan Mulla | Full-Stack Developer">
   <meta property="og:description" content="Full-Stack Developer & Computer Science student who lives in the terminal. Arch Linux + Hyprland daily driver.">
   <meta property="og:image" content="https://portfolio-website-decoded-bulwark-494314-d5.a.run.app/images/og-image.png">
 
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://portfolio-website-decoded-bulwark-494314-d5.a.run.app">
   <meta property="twitter:title" content="Aliyan Mulla | Full-Stack Developer">
@@ -29,12 +27,12 @@
 
 <canvas id="bg-canvas"></canvas>
 
-<!-- NAV -->
 <nav class="nav">
   <a href="#" class="nav-logo">aliyan_mulla</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -44,37 +42,22 @@
   </button>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-content">
     <div class="hero-tag">
       <span class="dot"></span>
       <span id="typed-text"></span><span class="cursor">|</span>
     </div>
-    <h1>Hi, I'm <span class="highlight">Aliyan</span><br>Abdulraheem Mulla</h1>
-    <p class="hero-desc">Full-Stack Developer & Computer Science student who lives in the terminal. Arch Linux + Hyprland daily driver. Building clean, efficient solutions from backend to frontend.</p>
+    <h1 id="hero-heading">Hi, I'm <span class="highlight">Aliyan</span><br>Abdulraheem Mulla</h1>
+    <p class="hero-desc" id="hero-desc"></p>
     <div class="hero-btns">
-      <a href="#contact" class="btn btn-primary">&#9889; Get In Touch</a>
-      <a href="#experience" class="btn btn-outline">&#8595; View My Work</a>
+      <a href="#contact" class="btn btn-primary" id="hero-btn-primary"></a>
+      <a href="#projects" class="btn btn-outline" id="hero-btn-secondary"></a>
     </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <h3 data-count="20" data-suffix="%">0</h3>
-        <p>Cost Reduction</p>
-      </div>
-      <div class="stat-item">
-        <h3 data-count="25" data-suffix="%">0</h3>
-        <p>Efficiency Boost</p>
-      </div>
-      <div class="stat-item">
-        <h3 data-count="4" data-suffix="+">0</h3>
-        <p>Languages Spoken</p>
-      </div>
-    </div>
+    <div class="hero-stats" id="hero-stats"></div>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="section-header reveal">
     <p class="section-label">// who am i</p>
@@ -103,171 +86,62 @@
       </div>
     </div>
     <div class="about-text reveal">
-      <h3>Developer by passion,<br>engineer by education.</h3>
-      <p>I completed a Software Engineering Internship at Crawlers Technologies, Hubli-Dharwad, working on web development projects using PHP and MySQL. I contributed to building a college management website with MVC architecture, handling database operations and backend logic.</p>
-      <p>When I'm not coding, I'm ricing my Hyprland setup or diving into open-source projects. I believe in writing clean, efficient code and continuously learning new technologies.</p>
-      <div class="about-tags">
-        <span>&#127760; Full-Stack</span>
-        <span>&#128039; Linux Enthusiast</span>
-        <span>&#9889; Problem Solver</span>
-        <span>&#128101; Team Leader</span>
-        <span>&#127941; SIH Participant</span>
-      </div>
+      <h3 id="about-heading"></h3>
+      <div id="about-paragraphs"></div>
+      <div class="about-tags" id="about-tags"></div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="section-header reveal">
     <p class="section-label">// tech stack</p>
     <h2 class="section-title">Skills & <span class="accent">Tools</span></h2>
   </div>
-  <div class="skills-grid">
-    <div class="skill-card reveal">
-      <div class="skill-icon">&#128187;</div>
-      <h3>Frontend Development</h3>
-      <div class="skill-list">
-        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Tailwind CSS</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <div class="skill-icon">&#9881;</div>
-      <h3>Backend Development</h3>
-      <div class="skill-list">
-        <span>PHP</span><span>MySQL</span><span>PostgreSQL</span><span>MVC</span><span>REST APIs</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <div class="skill-icon">&#128640;</div>
-      <h3>Programming Languages</h3>
-      <div class="skill-list">
-        <span>C</span><span>C++</span><span>Java</span><span>Python</span><span>Kotlin</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <div class="skill-icon">&#128039;</div>
-      <h3>Linux & DevOps</h3>
-      <div class="skill-list">
-        <span>Arch Linux</span><span>Hyprland</span><span>Bash</span><span>Git</span><span>CLI Tools</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <div class="skill-icon">&#128218;</div>
-      <h3>CS Fundamentals</h3>
-      <div class="skill-list">
-        <span>DSA</span><span>DBMS</span><span>OS</span><span>Software Design</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <div class="skill-icon">&#129309;</div>
-      <h3>Soft Skills</h3>
-      <div class="skill-list">
-        <span>Leadership</span><span>Project Mgmt</span><span>Problem Solving</span><span>Adaptability</span>
-      </div>
-    </div>
-  </div>
+  <div class="skills-grid" id="skills-grid"></div>
 </section>
 
-<!-- EXPERIENCE -->
+<section id="projects">
+  <div class="section-header reveal">
+    <p class="section-label">// featured work</p>
+    <h2 class="section-title">Projects <span class="accent">Built</span></h2>
+  </div>
+  <div class="projects-grid" id="projects-grid"></div>
+</section>
+
 <section id="experience">
   <div class="section-header reveal">
     <p class="section-label">// career path</p>
     <h2 class="section-title">Work <span class="accent">Experience</span></h2>
   </div>
-  <div class="timeline">
-    <div class="timeline-item reveal">
-      <p class="timeline-date">Jan 2025 — Present</p>
-      <h3>Full-Stack Developer</h3>
-      <h4>Crawlers Technologies, Hubli-Dharwad</h4>
-      <ul>
-        <li>Implemented cost-effective solutions, resulting in a 20% reduction in project expenses</li>
-        <li>Streamlined project workflows, enhancing overall efficiency by 25%</li>
-        <li>Led a team in successfully delivering a complex engineering project on time and within budget</li>
-        <li>Developed college management website using MVC architecture with PHP &amp; MySQL</li>
-        <li>Implemented database operations and backend functionalities for production systems</li>
-      </ul>
-    </div>
-  </div>
+  <div class="timeline" id="experience-list"></div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education">
   <div class="section-header reveal">
     <p class="section-label">// learning journey</p>
     <h2 class="section-title">Education & <span class="accent">Certifications</span></h2>
   </div>
-  <div class="edu-grid">
-    <div class="edu-card reveal">
-      <span class="badge">June 2025 — Present</span>
-      <h3>Bachelor of Engineering in Computer Science</h3>
-      <h4>BMS Institute of Technology and Management, Bengaluru</h4>
-      <div class="edu-tags">
-        <span>DSA with C</span><span>DBMS</span><span>OS</span><span>C++</span><span>Arch Linux</span><span>Hyprland</span>
-      </div>
-    </div>
-    <div class="edu-card reveal">
-      <span class="badge">May 2022 — May 2025</span>
-      <h3>Diploma in Computer Science</h3>
-      <h4>Anjuman E Islam Polytechnic, Gadag</h4>
-      <div class="edu-tags">
-        <span>Java</span><span>Python</span><span>DSA</span><span>DBMS</span><span>HTML/CSS/JS</span><span>PHP</span><span>MySQL</span><span>Tailwind</span>
-      </div>
-    </div>
-    <div class="edu-card reveal">
-      <span class="badge">Certification</span>
-      <h3>Infosys Springboard</h3>
-      <h4>Professional Development Program</h4>
-      <div class="edu-tags">
-        <span>Software Engineering</span><span>Industry Skills</span>
-      </div>
-    </div>
-    <div class="edu-card reveal">
-      <span class="badge">Achievement</span>
-      <h3>Smart India Hackathon (SIH)</h3>
-      <h4>National Level Hackathon Participant</h4>
-      <div class="edu-tags">
-        <span>Innovation</span><span>Team Collaboration</span><span>Problem Solving</span>
-      </div>
-    </div>
-  </div>
+  <div class="edu-grid" id="education-list"></div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="section-header reveal">
     <p class="section-label">// let's connect</p>
     <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
   </div>
   <div class="contact-wrapper reveal">
-    <p>I'm always open to new opportunities, collaborations, and interesting conversations. Whether you have a project in mind or just want to say hello — let's talk!</p>
-    <div class="contact-links">
-      <a href="mailto:aliyan.abdulraheem.mulla@gmail.com" class="contact-card">
-        <span class="icon">&#9993;</span>
-        <span>aliyan.abdulraheem.mulla@gmail.com</span>
-      </a>
-      <a href="tel:+917019224898" class="contact-card">
-        <span class="icon">&#128222;</span>
-        <span>+91 7019224898</span>
-      </a>
-      <a href="#" class="contact-card">
-        <span class="icon">&#127760;</span>
-        <span>Bengaluru, India</span>
-      </a>
-    </div>
-    <div class="about-tags" style="justify-content:center;">
-      <span>&#127463;&#127468; English</span>
-      <span>Urdu</span>
-      <span>Hindi</span>
-      <span>Kannada</span>
-    </div>
+    <p id="contact-intro"></p>
+    <div class="contact-links" id="contact-links"></div>
+    <div class="about-tags" style="justify-content:center;" id="contact-languages"></div>
   </div>
 </section>
 
 <footer class="footer">
-  <p>Designed & Built by <span>Aliyan Mulla</span> &mdash; &copy; 2025. Powered by Arch Linux &#128039;</p>
+  <p>Designed & Built by <span>Aliyan Mulla</span> &mdash; &copy; 2025. Powered by Arch Linux &#128039; &middot; <a href="admin.html" class="admin-link">Admin</a></p>
 </footer>
 
+<script src="portfolio-data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

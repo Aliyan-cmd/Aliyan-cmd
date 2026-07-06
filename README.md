@@ -3,6 +3,8 @@
 A modern, responsive personal portfolio website built with **HTML, CSS, and JavaScript**.  
 It highlights my profile, skills, experience, education, and contact details with a clean developer-focused UI and smooth interactions.
 
+![Portfolio Preview](images/og-image.png)
+
 ## Live Demo
 
 ## Features

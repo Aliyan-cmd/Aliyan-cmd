@@ -276,6 +276,58 @@ section {
   color: var(--accent); border-color: var(--accent);
 }
 
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.project-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: all 0.35s;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0,255,200,0.2);
+}
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+.project-card p {
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.project-tech span {
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+.project-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.project-link:hover {
+  text-decoration: underline;
+}
+
 /* EXPERIENCE */
 .timeline {
   max-width: 800px; margin: 0 auto;
@@ -401,6 +453,13 @@ section {
   position: relative; z-index:1;
 }
 .footer span { color: var(--accent); }
+.admin-link {
+  color: var(--accent2);
+  text-decoration: none;
+}
+.admin-link:hover {
+  text-decoration: underline;
+}
 
 /* ANIMATIONS */
 @keyframes fadeInUp {
@@ -442,7 +501,17 @@ section {
   section { padding: 60px 24px; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .skills-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
   .edu-grid { grid-template-columns: 1fr; }
   .stat-item h3 { font-size: 1.5rem; }
   .footer { padding: 24px; }
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: var(--accent);
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
