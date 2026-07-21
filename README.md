@@ -36,21 +36,24 @@
 
 <h4 align="left" style="letter-spacing:0.1em; color:#445566; font-weight:400; margin-bottom:8px;">ACTIVITY</h4>
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://ghchart.rshah.org/Aliyan-cmd" alt="Aliyan's GitHub Contribution Graph" width="100%" />
-      <br />
-      <sub style="color:#556677;">contributions</sub>
-    </td>
-    <td width="50%" align="center">
-      <p style="font-size:48px; font-weight:700; color:#00ff88; margin:0;">42</p>
-      <p style="font-size:14px; color:#556677; margin:0;">day streak</p>
-      <p style="font-size:12px; color:#334455;">🔥 best: 87</p>
-    </td>
-  </tr>
-</table>
+<!-- ============================================================ -->
+<!-- ACTIVITY – Dynamic Graph + Snake + Streak                    -->
+<!-- ============================================================ -->
 
+<h4 align="left" style="letter-spacing:0.1em; color:#445566; font-weight:400; margin-bottom:8px;">ACTIVITY</h4>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Aliyan-cmd&theme=github-dark&area=true&hide_border=true&bg_color=0d0d14&color=00ff88&line=00ff88&point=00ff88" width="100%" alt="GitHub Activity Graph" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Aliyan-cmd/Aliyan-cmd/output/snake.svg" alt="Snake animation" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aliyan-cmd&hide_border=true&background=0d0d14&stroke=00ff88&ring=00ff88&fire=00ff88&currStreakNum=00ff88&sideNums=00ff88&currStreakLabel=00ff88&sideLabels=00ff88&dates=8899aa" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Aliyan-cmd&show_icons=true&hide_border=true&bg_color=0d0d14&title_color=00ff88&text_color=8899aa&icon_color=00ff88&count_private=true&hide=issues&hide_title=true" width="49%" />
+</p>
 <br />
 
 <!-- ============================================================ -->
