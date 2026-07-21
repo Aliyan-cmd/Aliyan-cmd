@@ -6,7 +6,10 @@
 -->
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=800&color=00FF88&center=true&vCenter=true&width=600&lines=Software+Engineer;Flutter+Developer;Full+Stack+Engineer;AI+Builder;UI%2FUX+Designer;Future+Founder" alt="Typing SVG" />
+  <img src="https://komarev.com/ghpvc/?username=Aliyan-cmd&label=VISITORS&color=00ff88&style=flat-square" alt="visitor badge" />
+  <img src="https://img.shields.io/badge/status-available-00ff88?style=flat-square&labelColor=0a0a0f" alt="status" />
+  <img src="https://img.shields.io/badge/focus-open%20source-00ff88?style=flat-square&labelColor=0a0a0f" alt="open source" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/Aliyan-cmd&query=%24.public_repos&label=repos&color=00ff88&style=flat-square&labelColor=0a0a0f" alt="repo count" />
 </p>
 
 <p align="center">
