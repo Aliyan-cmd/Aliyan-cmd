@@ -363,7 +363,14 @@ $ whoami
 </p>
 
 <br />
-
+<script>
+  const statuses = ['Flutter', 'Kotlin', 'Next.js', 'Python', 'AI/ML'];
+  let i = 0;
+  setInterval(() => {
+    const el = document.getElementById('status');
+    if (el) el.textContent = statuses[i++ % statuses.length];
+  }, 3000);
+</script>
 <!-- ============================================================ -->
 <!-- FOOTER                                                        -->
 <!-- ============================================================ -->
@@ -375,11 +382,4 @@ $ whoami
 <p align="center" style="font-size:12px; color:#334455; font-family:monospace;">
   <span style="color:#00ff88;">❯</span> Aliyan AbdulRaheem Mulla  ·  turning research into real‑world software.
 </p>
-<script>
-  const statuses = ['Flutter', 'Kotlin', 'Next.js', 'Python', 'AI/ML'];
-  let i = 0;
-  setInterval(() => {
-    const el = document.getElementById('status');
-    if (el) el.textContent = statuses[i++ % statuses.length];
-  }, 3000);
-</script>
+
