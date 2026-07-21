@@ -95,7 +95,7 @@ To personalize this portfolio:
 
 ## Contact
 
-- **Email:** aliyan.abdulraheem.mulla@gmail.com
+- **Email:** aliyanmulla8@outlook.com
 - **Phone:** +91 7019224898
 - **Location:** Bengaluru, India
 
