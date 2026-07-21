@@ -363,14 +363,7 @@ $ whoami
 </p>
 
 <br />
-<script>
-  const statuses = ['Flutter', 'Kotlin', 'Next.js', 'Python', 'AI/ML'];
-  let i = 0;
-  setInterval(() => {
-    const el = document.getElementById('status');
-    if (el) el.textContent = statuses[i++ % statuses.length];
-  }, 3000);
-</script>
+
 <!-- ============================================================ -->
 <!-- FOOTER                                                        -->
 <!-- ============================================================ -->
